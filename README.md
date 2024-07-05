@@ -31,7 +31,8 @@ Next step is to edit the /etc/default/grub
 
 sudo nvim (text editor of choice) /etc/default/grub
 
-![[Pasted image 20240704212808.png]]
+![Pasted image 20240704212808](https://github.com/tlg-tg/Arch-Linux-Gpu-Passthrough/assets/61950743/764ee8d7-ece9-4a95-b27d-c63b83b52f2e)
+
 
 after the loglevel3 or splash add the following (note if you have quiet then you can just remove the quiet line)
 
@@ -69,7 +70,8 @@ Now we have to edit the mkinitcpio.conf
 And add the following in the modules 
 MODULES=(vfio vfio_iommu_type1 vfio_pci)
 
-![[Pasted image 20240704214410.png]]
+![Pasted image 20240704214410](https://github.com/tlg-tg/Arch-Linux-Gpu-Passthrough/assets/61950743/7ebb8ccc-b7a1-4aba-b8e9-849e107cb61a)
+
 
 It should look something like this.
 
